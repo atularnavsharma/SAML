@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Security SAML Testing</title>
+</head>
+<body>
+	<h2>SAML With OCTA Example</h2>
+	<h3 th:text="'First Name = ' +${firstName}"></h3>
+	<h3 th:text="'Last Name = ' +${lastName}"></h3>
+	<h3 th:text="'EmailID = ' +${email}"></h3>
+	<h3 th:text="'LoginID = ' +${login}"></h3> 
+	<h3 th:if="${group}" th:text="${group}"></h3>
+</body>
+</html>
